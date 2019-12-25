@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="ColorManager" version="1.0.0" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+	<name>ColorManager</name>
+	<js-module name="ColorManager" src="www/ColorManager.js">
+		<clobbers target="ColorManager" />
+	</js-module>
+
+	<!-- android -->
+	<platform name="android">
+		<config-file target="res/xml/config.xml" parent="/*">
+			<feature name="ColorManager">
+				<param name="android-package" value="com.belle.cordova.plugin.ColorManager" />
+			</feature>
+		</config-file>
+		<source-file src="src/android/FileUtil.java" target-dir="src/com/belle/cordova/plugin/FileUtil" />
+		<source-file src="src/android/ColorManager.java" target-dir="src/com/belle/cordova/plugin/ColorManager" />
+	</platform>
+</plugin>

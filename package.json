@@ -1,0 +1,17 @@
+{
+  "name": "corlormanager",
+  "version": "1.0.0",
+  "description": "Cordova Plugin for Color supported devices ",
+  "main": "CorlorManager.js",
+  "cordova": {
+    "id": "CorlorManager",
+    "platforms": [
+      "android"
+    ]
+  }, 
+  "keywords": [
+    "cordova"
+  ],
+  "author": "",
+  "license": "MIT"
+}
